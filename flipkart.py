@@ -9,7 +9,6 @@ res = requests.get(url=url)
 web_page = res.text
 soup = BeautifulSoup(web_page,features="lxml")
 item_heading = (soup.title.string)
-print(item_heading)
 main_div = soup.find_all("div", {"class": "DOjaWF gdgoEp"})
 data_set = []
 if len(main_div):
