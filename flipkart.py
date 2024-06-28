@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import csv
 import pandas as pd
 
-item = "mobile"   
+item = "laptop"   
 url = f"https://www.flipkart.com/search?q={item}"
 res = requests.get(url=url)
 web_page = res.text
