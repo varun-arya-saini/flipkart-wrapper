@@ -64,4 +64,4 @@ filename = f"{item_heading}.csv"
 with open(filename, 'w') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames=fields)    
     writer.writeheader()
-    writer.writerows(data_set),
+    writer.writerows(data_set)
